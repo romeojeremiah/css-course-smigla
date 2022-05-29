@@ -1,0 +1,41 @@
+/***************
+Hero Page
+****************/
+
+h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.header {
+    height: 100vh;
+    background: var(--orange);
+}
+
+.hero {
+    color: #fff;
+    width: 70vw;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 1.2rem 1.2rem;
+}
+
+.hero p {
+    max-width: 80%;
+    line-height: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background: linear-gradient(
+                rgba(241, 80, 37, 0.75),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url(../img/image-2.jpeg) center/cover no-repeat;
+        background-attachment: fixed;
+    }
+}

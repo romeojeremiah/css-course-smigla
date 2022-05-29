@@ -1,0 +1,50 @@
+a:link,
+a:visited {
+    color: lightcoral;
+}
+
+a:hover,
+a:active {
+    color: darkslategray;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Fira Code", monospace;
+    color: #222;
+}
+
+.container {
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: lightslategray;
+}
+
+.navbar-center {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.links {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 1rem 1rem;
+}
+
+@media screen and (max-width: 650px) {
+    .links {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        gap: 2rem 0;
+        justify-items: start;
+    }
+}

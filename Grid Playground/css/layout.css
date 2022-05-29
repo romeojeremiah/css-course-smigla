@@ -1,0 +1,99 @@
+main {
+    height: 100vh;
+}
+
+header {
+    background: var(--orange);
+    color: var(--white);
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: var(--dark-grey);
+}
+
+ul.links {
+    padding: 0.75rem;
+}
+
+.link a {
+    color: var(--card-heading);
+    transition: var(--transition);
+    font-size: 1.2rem;
+}
+
+.link a:hover {
+    color: var(--white);
+}
+
+.main-text {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 2rem auto;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.card-icon-container {
+    background: var(--orange);
+}
+
+.fa-brands {
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}
+
+.footer {
+    background: var(--card-heading);
+    color: var(--white);
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 200px 3fr 50px;
+    }
+
+    .links,
+    .card-icon-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .link {
+        display: block;
+        padding: 5rem 0;
+    }
+
+    .fa-brands {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-text {
+        width: 90%;
+        grid-column: 2 / 3;
+        padding: 1em;
+    }
+
+    header,
+    footer {
+        grid-column: 1 / -1;
+    }
+}
