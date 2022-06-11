@@ -1,0 +1,152 @@
+/* GENERAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    /* 2. Colors */
+    /* Tints */
+    --tint-1: #e0deff;
+    --tint-2: #a29dff;
+    --tint-3: #837dff;
+    --primary: #645cff;
+    --dark-1: #504acc;
+    --dark-2: #3c3799;
+    --dark-3: #141233;
+    /* Grays */
+    --gray-lightest: #fafafa;
+    --gray-light: #cccccc;
+    --gray: #4c4c4c;
+    /* White */
+    --white: #fff;
+    --fixed-width: 600px;
+    --spacing: 4px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+    background-color: var(--gray-lightest);
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+.section-center {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: var(--spacing);
+}
+
+.btn {
+    height: 100%;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Project ColorFlipper CSS */
+
+.nav {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: var(--spacing);
+    color: var(--primary);
+}
+
+.navbar {
+    width: var(--fixed-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.link:link,
+.link:visited {
+    color: var(--gray);
+    margin-left: 1.5rem;
+}
+
+.link:active,
+.link:hover {
+    color: var(--primary);
+}
+
+.hero {
+    height: calc(100vh - 4rem);
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 650px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-container-content {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    background-color: #222;
+}
+
+.color {
+    color: var(--primary);
+}
+
+.btn-hero {
+    width: 9rem;
+    font: inherit;
+    letter-spacing: var(--spacing);
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+
+.btn-hero:hover {
+    background-color: #222;
+    color: var(--white);
+}
