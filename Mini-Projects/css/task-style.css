@@ -1,0 +1,176 @@
+/* GENERAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    /* 2. Colors */
+    /* Tints */
+    --tint-1: #e0deff;
+    --tint-2: #a29dff;
+    --tint-3: #837dff;
+    --primary: #645cff;
+    --dark-1: #504acc;
+    --dark-2: #3c3799;
+    --dark-3: #141233;
+    /* Grays */
+    --gray-lightest: #fafafa;
+    --gray-light: #cccccc;
+    --gray: #475569;
+    /* White */
+    --white: #fff;
+    --fixed-width: 600px;
+    --spacing: 1px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+    background-color: var(--gray-lightest);
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1170px;
+    width: 70vw;
+    margin: 5rem auto;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: var(--spacing);
+}
+
+.container-input {
+    /* border: 1px solid red; */
+    padding: 1rem;
+    height: 100%;
+    margin-bottom: 3rem;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+.container-input .title {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.form-input-submit {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.input-form {
+    height: 2rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid var(--gray-light);
+    background-color: var(--gray-lightest);
+}
+
+.input-form::placeholder {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: var(--gray);
+}
+
+.btn-submit {
+    height: 100%;
+    text-transform: capitalize;
+    font-size: 1rem;
+    /* padding: 0.75rem 1rem; */
+    background: transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--white);
+    letter-spacing: var(--spacing);
+    border: transparent;
+}
+
+.error {
+    font-size: 0.75rem;
+    letter-spacing: var(--spacing);
+    margin: 0.5rem 0;
+    color: darkred;
+}
+
+.loading {
+    margin-bottom: 2rem;
+}
+
+.task-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
+    justify-content: stretch;
+    background-color: var(--white);
+    padding: 1rem 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.task-name {
+    justify-self: start;
+    width: 100%;
+}
+
+.task-name input {
+    border: none;
+    font-size: 1.25rem;
+    color: var(--gray);
+    width: 100%;
+}
+
+.task-name input::placeholder {
+    text-decoration: line-through;
+}
+
+.task-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+
+.task-btn {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn-edit {
+    color: green;
+}
+
+.btn-delete {
+    color: darkred;
+}
