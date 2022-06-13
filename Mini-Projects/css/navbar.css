@@ -1,0 +1,149 @@
+/* GENERAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    /* 2. Colors */
+    /* Tints */
+    --tint-1: #e0deff;
+    --tint-2: #a29dff;
+    --tint-3: #837dff;
+    --primary: #645cff;
+    --dark-1: #504acc;
+    --dark-2: #3c3799;
+    --dark-3: #141233;
+    /* Grays */
+    --gray-lightest: #fafafa;
+    --gray-light: #cccccc;
+    --gray: #475569;
+    /* White */
+    --white: #fff;
+    --fixed-width: 600px;
+    --spacing: 1px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+    background-color: var(--gray-lightest);
+    line-height: 1.75;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1170px;
+    width: 70vw;
+    margin: 5rem auto;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: var(--spacing);
+    color: var(--gray);
+}
+
+/* Page Styles */
+.nav {
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 1rem 0;
+}
+
+.nav-center {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    font-size: 2rem;
+    /* border: 1px solid red; */
+}
+
+.highlight {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.links {
+    list-style-type: none;
+    display: none;
+}
+
+.links.show-links {
+    display: block;
+}
+
+.link {
+    line-height: 2.5;
+    text-transform: capitalize;
+}
+
+.btn-navbar {
+    background-color: transparent;
+    border: none;
+    transform: scale(2);
+    color: var(--primary);
+}
+
+.icons {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        justify-content: start;
+    }
+
+    .btn-navbar {
+        display: none;
+    }
+
+    .links {
+        display: inline-block;
+    }
+
+    .link {
+        display: inline;
+        margin-left: 1rem;
+    }
+    .icons {
+        display: block;
+    }
+
+    .icon {
+        margin-left: 5px;
+        color: var(--primary);
+    }
+}
