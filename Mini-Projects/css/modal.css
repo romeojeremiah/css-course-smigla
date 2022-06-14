@@ -1,0 +1,149 @@
+/* GENERAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    /* 2. Colors */
+    /* Tints */
+    --tint-1: #e0deff;
+    --tint-2: #a29dff;
+    --tint-3: #837dff;
+    --primary: #645cff;
+    --dark-1: #504acc;
+    --dark-2: #3c3799;
+    --dark-3: #141233;
+    /* Grays */
+    --gray-lightest: #fafafa;
+    --gray-light: #cccccc;
+    --gray: #475569;
+    /* White */
+    --white: #fff;
+    --fixed-width: 600px;
+    --spacing: 1px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: 0.3s all linear;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+    background-color: var(--gray-lightest);
+    line-height: 1.75;
+}
+
+img {
+    width: 100%;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1170px;
+    width: 70vw;
+    margin: 5rem auto;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: var(--spacing);
+    color: var(--gray);
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Page Styles */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/hero.jpeg") no-repeat center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.container-modal {
+    max-width: 60%;
+    width: 600px;
+    background-color: white;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.modal-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.btn-open {
+    width: 8rem;
+    /* height: 2rem; */
+    text-transform: capitalize;
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(22, 127, 224, 0.603);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+}
+
+.container-modal-content {
+    max-width: 60%;
+    width: 600px;
+    background-color: white;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.fa-xmark {
+    color: darkred;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
