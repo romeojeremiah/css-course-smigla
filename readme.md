@@ -1,1 +1,1 @@
-This repository hosts the projects completed from John Smigla's CSS course. You can find the full details of his course at his website or on Udemy.com(https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites)
+This repository hosts the projects completed from John Smigla's CSS course. You can find the full details of his course at his website or on [Udemy.com](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites)
