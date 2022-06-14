@@ -183,35 +183,12 @@ a {
     transform: translateX(0);
 }
 
-/* @media screen and (min-width: 800px) {
-    .nav-center {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbar {
-        justify-content: start;
+@media screen and (max-width: 800px) {
+    .nav {
+        width: 100vw;
     }
 
     .btn-navbar {
         display: none;
     }
-
-    .links {
-        display: inline-block;
-    }
-
-    .link {
-        display: inline;
-        margin-left: 1rem;
-    }
-    .icons {
-        display: block;
-    }
-
-    .icon {
-        margin-left: 5px;
-        color: var(--primary);
-    }
-} */
+}
