@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/grocery.css" />
+    <title>Grocery Bud</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-danger">please enter value</div>
+        <h4 class="title">grocery bud</h4>
+        <div class="grocery-input-container">
+            <input type="text" class="grocery-input" placeholder="e.g. eggs"><input type="submit" value="submit" class="btn-input">
+        </div>
+        <div class="grocery-item-container">
+            <!-- single grocery item -->
+            <div class="grocery-item">
+                <p class="item">oranges</p>
+                <div class="btn-container">
+                    <button class="btn btn-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn btn-delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <!-- end of single grocery item -->
+            <!-- single grocery item -->
+            <div class="grocery-item">
+                <p class="item">apples</p>
+                <div class="btn-container">
+                    <button class="btn btn-edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="btn btn-delete"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <!-- end of single grocery item -->
+            <div class="btn-clear">clear items</div>
+        </div>
+    </div>
+</body>
+</html>

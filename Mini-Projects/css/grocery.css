@@ -1,0 +1,156 @@
+/* GENERAL STYLES */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    /* 2. Colors */
+    --gold: #c59d5f;
+    /* Tints */
+    --tint-1: #e0deff;
+    --tint-2: #a29dff;
+    --tint-3: #837dff;
+    --primary: #645cff;
+    --dark-1: #504acc;
+    --dark-2: #3c3799;
+    --dark-3: #141233;
+    /* Grays */
+    --gray-lightest: #fafafa;
+    --gray-light: #cccccc;
+    --gray: #475569;
+    /* White */
+    --white: #fff;
+    --fixed-width: 600px;
+    --spacing: 1px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition: 0.3s all linear;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+    background-color: var(--gray-lightest);
+    line-height: 1.75;
+    letter-spacing: 1px;
+}
+
+
+.container {
+    max-width: 1170px;
+    width: 90vw;
+    margin: 10rem auto;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.alert{
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    color: darkred;
+}
+
+.alert-danger{
+    background-color: lightcoral;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--gray);
+    margin: 1rem;
+}
+
+.grocery-input-container{
+    display:flex;
+    margin-bottom: 2rem;
+    
+}
+
+.grocery-input{
+    width: 100%;
+    background-color: #f8fafc;
+    color: var(--gray-light);
+    border: 1px solid var(--gray-light);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 1rem;
+}
+
+.btn-input{
+    background-color: var(--primary);
+    color: white;
+    letter-spacing: 1px;
+    padding: .5rem .75rem;
+    border: transparent;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.grocery-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.item{
+    text-transform: capitalize;
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: inline-block;
+    padding: .25rem .5rem;
+    color: var(--gold);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--gold);
+    color: var(--white);
+}
+
+.btn-edit{
+    color: darkgreen;
+}
+
+.btn-delete{
+    color: darkred;
+}
+
+.btn-clear{
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: darkred;
+}
+
+
+
+
